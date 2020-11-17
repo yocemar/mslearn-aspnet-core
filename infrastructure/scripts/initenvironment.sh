@@ -16,7 +16,7 @@ declare gitDirectoriesToClone="modules/$moduleName/setup/ modules/$moduleName/sr
 declare gitPathToCloneScript=https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/$gitBranch/infrastructure/scripts/sparsecheckout.sh
 if ! [ $rootLocation ]
 then
-    declare rootLocation=~
+    declare rootLocation=~/clouddrive
 fi
 declare srcWorkingDirectory=$rootLocation/aspnet-learn/src
 declare setupWorkingDirectory=$rootLocation/aspnet-learn/setup
