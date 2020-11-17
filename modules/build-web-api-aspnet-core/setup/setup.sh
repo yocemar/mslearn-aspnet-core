@@ -26,4 +26,4 @@ declare suppressAzureResources=true
 
 # If they reconnect, bring them back here.
 echo >> ~/.bashrc
-echo "cd ~/aspnet-learn/src/ContosoPets.Api && code ." >> ~/.bashrc
+echo "cd $srcWorkingDirectory/ContosoPets.Api && code ." >> ~/.bashrc
