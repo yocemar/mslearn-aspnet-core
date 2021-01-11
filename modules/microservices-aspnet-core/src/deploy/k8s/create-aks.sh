@@ -81,14 +81,14 @@ then
         echo "${newline}${errorStyle}ERROR: If resource group has to be created, location is mandatory. Use -l to set it.${defaultTextStyle}${newline}"
         exit 1
     fi
-    echo "Creating resource group $eshopRg in location $eshopLocation..."
-    echo "${newline} > ${azCliCommandStyle}az group create -n $eshopRg -l $eshopLocation --output none${defaultTextStyle}${newline}"
-    az group create -n $eshopRg -l $eshopLocation --output none
-    if [ ! $? -eq 0 ]
-    then
-        echo "${newline}${errorStyle}ERROR: Can't create resource group!${defaultTextStyle}${newline}"
-        exit 1
-    fi
+    # echo "Creating resource group $eshopRg in location $eshopLocation..."
+    # echo "${newline} > ${azCliCommandStyle}az group create -n $eshopRg -l $eshopLocation --output none${defaultTextStyle}${newline}"
+    # az group create -n $eshopRg -l $eshopLocation --output none
+    # if [ ! $? -eq 0 ]
+    # then
+    #     echo "${newline}${errorStyle}ERROR: Can't create resource group!${defaultTextStyle}${newline}"
+    #     exit 1
+    # fi
 else
     if [ -z "$eshopLocation" ]
     then
